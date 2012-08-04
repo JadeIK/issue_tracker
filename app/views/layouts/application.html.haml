@@ -1,0 +1,9 @@
+%html
+%head
+  %title IssuesTracker
+  = stylesheet_link_tag   "application"
+  = javascript_include_tag "application" 
+  = csrf_meta_tags
+  .content{:style => "width: 960px; margin: auto;"}
+    .main{:style => "width: 80%; margin:  auto;" }
+      = yield

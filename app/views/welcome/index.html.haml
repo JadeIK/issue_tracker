@@ -1,1 +1,10 @@
-%span{:style => "font-size: 1.8em"} Register form
+#register{:style => "width: 200px; margin: auto;  text-align: center; background: silver; padding: 10px; border: 1px solid black; border-radius: 10px;"}
+  %span{:style => "font-size: 1.8em; width: 200px; margin: auto;"} Register form
+  %form{:action=>"#", :method=>"POST"} 
+    %label{:style => "width:100px; float: left; text-align: left;"} User Name:
+    %input{:name=>"username", :style => "width:100px;  float: left; border: 1px solid black; border-radius: 10px;  padding-left:10px;" }
+    %label{:style => "width:100px;  float: left; text-align: left;"} Password:
+    %input{:type => "password", :name=>"pass", :style => "  float: left; width:100px; border: 1px solid black; border-radius: 10px;  padding-left:10px;" }
+    %label{:style => "width:100px;  float: left; text-align: left;"} Confirm:
+    %input{:type => "password", :name=>"conf_pass", :style => "  float: left; width:100px; border: 1px solid black; border-radius: 10px; padding-left:10px;" }
+    %button{:type =>:submit, :name => "register"} Register
